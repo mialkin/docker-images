@@ -9,5 +9,7 @@ build:
   stage: build
   interruptible: true
   image: docker:stable
+  services:
+    - docker:dind
   script:
     - docker build .
