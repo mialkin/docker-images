@@ -1,0 +1,13 @@
+variables:
+  DOCKER_IMAGE_NAME: mialkin/dotnet8-sdk-with-tools
+
+stages:
+  - build
+  - publish
+
+build:
+  stage: build
+  interruptible: true
+  image: docker:stable
+  script:
+    - docker build .
