@@ -1,5 +1,5 @@
 variables:
-  DOCKER_IMAGE_NAME: mialkin/dotnet8-sdk-with-tools
+  DOCKER_IMAGE_NAME: mialkin/dotnet-sdk-with-tools
 
 stages:
   - build
