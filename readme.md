@@ -6,9 +6,8 @@ Base image `mcr.microsoft.com/dotnet/sdk:9.0` with pre-installed Docker CLI (`do
 ## Build image
 
 ```bash
-docker build --tag <username>/dotnet-sdk-9-gitlab-ci .
+docker build --platform linux/amd64  --tag <username>/dotnet-sdk-9-gitlab-ci .
 ```
-
 
 ## Publish to GitLab container registry
 
